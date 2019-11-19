@@ -27,9 +27,12 @@ jobs:
       #     name: code-coverage
       #     command: npm run coverage
       - run: npm run build
+      - run: ls -la
+      - run: echo pwd
       - aws-s3/sync:
           from: dist
           to: 's3://bucketofyanggu/dist'
+          aws-region: 'ap-southeast-2'
           arguments: |
             --acl public-read \
             --cache-control "max-age=86400"
