@@ -9,16 +9,19 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test": "jest"
+    "test": "nyc report --reporter=text-lcov && jest",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.10.2"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.0.0",
+    "@nuxtjs/vuetify": "^1.9.0",
     "@vue/test-utils": "^1.0.0-beta.27",
-    "babel-jest": "^24.1.0",
-    "jest": "^24.1.0",
+    "babel-jest": "^24.9.0",
+    "coveralls": "^3.0.7",
+    "jest": "^24.9.0",
+    "nyc": "^14.1.1",
     "vue-jest": "^4.0.0-0"
   }
 }
