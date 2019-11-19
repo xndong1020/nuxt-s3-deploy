@@ -5,8 +5,6 @@ jobs:
   build:
     docker:
       - image: circleci/node:10.16.3
-      - image: circleci/python:3.7-stretch
-    working_directory: /tmp
     steps:
       - checkout # special step to check out source code to working directory
       - run:
