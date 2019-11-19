@@ -22,9 +22,9 @@ jobs:
       - run: # run tests
           name: test
           command: npm test
-      - run: # run coverage report to coveralls
-          name: code-coverage
-          command: npm run coverage
+      # - run: # run coverage report to coveralls
+      #     name: code-coverage
+      #     command: npm run coverage
       - run: npm run build
       - run: ls -la
 
