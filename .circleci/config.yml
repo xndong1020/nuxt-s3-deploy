@@ -27,8 +27,6 @@ jobs:
       #     name: code-coverage
       #     command: npm run coverage
       - run: npm run build
-      - run: ls -la
-      - run: echo $AWS_ACCESS_KEY_ID $AWS_SECRET_ACCESS_KEY $AWS_REGION
       - aws-s3/sync:
           from: dist
           to: "s3://bucketofyanggu/dist"
