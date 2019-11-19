@@ -33,7 +33,4 @@ jobs:
           from: dist
           to: "s3://bucketofyanggu/dist"
           aws-region: AWS_REGION
-          arguments: |
-            --acl public-read \
-            --cache-control "max-age=86400"
           overwrite: true
