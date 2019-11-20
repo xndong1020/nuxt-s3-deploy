@@ -29,6 +29,6 @@ jobs:
       - run: npm run build
       - aws-s3/sync:
           from: dist
-          to: 's3://o-kojudoclub.com.au'
+          to: 's3://api-s3-proy'
           aws-region: AWS_REGION
           overwrite: true
