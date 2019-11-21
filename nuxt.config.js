@@ -20,7 +20,7 @@ export default {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
   router: {
-    base: "/test/evertz/"
+    base: "/test/"
   },
   /*
    ** Customize the progress-bar color
