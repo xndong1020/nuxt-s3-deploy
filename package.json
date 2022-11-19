@@ -13,7 +13,7 @@
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "dependencies": {
-    "nuxt": "^2.10.2"
+    "nuxt": "^2.15.8"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.9.0",
